@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* skrifttyper */
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.titel {
+  font-family: "Roboto", serif;
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.titel:hover {
+  font-weight: 450;
+}
+h2 {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+a {
+  font-family: "Roboto", serif;
+  font-weight: lighter;
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover {
+  font-weight: 450;
+}
+.categorylist a {
+  font-family: "Roboto", serif;
+  text-decoration: none;
+  font-weight: lighter;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px grey solid;
+}
+.categorylist a:hover {
+  font-weight: 450;
+}
+.productlist article h3 {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  flex-grow: 3;
+}
+
+/* form */
+.purchaseBox {
+  color: black;
+  padding: 50px;
+  border: 1px grey solid;
+}
+.info {
+  padding: 50px;
+}
+.product select {
+  min-width: 30px;
+  border-radius: 30px;
+}
+.product select:hover {
+  border: 2px solid;
+}
+
+.product main {
+  display: grid;
+}
+.product main,
+.product main img {
+  grid-column: 1/-1;
+}
+.purchaseBox form label {
+  gap: 1rem;
+}
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 50%;
+  place-self: center;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+}
+.purchaseBox button:hover {
+  font-weight: 450;
+  border: 2px solid;
+}
+dt {
+  font-weight: 700;
+  text-decoration: underline;
+}
