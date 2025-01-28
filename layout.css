@@ -18,6 +18,8 @@ html {
 }
 body {
   height: 100vh;
+
+  background-color: #f9f9f9;
 }
 
 footer {
@@ -36,9 +38,7 @@ header {
 }
 
 .productlist {
-  margin: 100px;
-  margin-top: 30px;
-  margin-left: 50px;
+  margin: 50px;
 }
 
 .productlist main {
@@ -72,6 +72,8 @@ header {
   content: "Sold Out";
   position: absolute;
   padding: 1rem;
+  font-family: roboto;
+  font-weight: bold;
 }
 .productlist article .discounted,
 .productlist article .price span {
@@ -94,5 +96,19 @@ header {
   margin-bottom: 1rem;
 }
 .discounted p:last-child {
-  padding: 0.2rem;
+  padding: 0.1rem;
+  font-size: 1rem;
+  font-family: roboto;
+  font-weight: bold;
+  background-color: rgba(255, 255, 101, 0.8);
+  border-radius: 20px;
+}
+
+.smallProduct {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+  place-self: center;
+}
+.smallProduct:hover {
+  transform: scale(1.1);
 }

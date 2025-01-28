@@ -24,12 +24,19 @@
   font-style: normal;
 }
 
+.titel span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+}
+
 .titel {
   font-family: "Roboto", serif;
   font-size: 3rem;
   text-decoration: none;
   color: black;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .titel:hover {
@@ -58,10 +65,19 @@ a:hover {
   padding: 2rem;
   border-radius: 10px;
   border: 1px grey solid;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(119, 119, 119, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .categorylist a:hover {
   font-weight: 450;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .productlist article h3 {
   font-family: "Roboto", serif;
   font-size: 1rem;
