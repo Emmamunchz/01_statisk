@@ -28,25 +28,50 @@
   display: inline-block;
   transform: scaleX(-1) translateX(-0.2rem);
   color: rgb(0, 0, 0);
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .titel {
   font-family: "Roboto", serif;
-  font-size: 3rem;
-  text-decoration: none;
+  font-size: 2rem;
+  text-decoration: 1px gray underline;
   color: black;
   font-weight: 500;
+  place-self: center;
+  text-align: center;
+  justify-self: center;
 }
 
 .titel:hover {
   font-weight: 450;
 }
+
+.linje {
+  width: 80%;
+  height: 0.1px;
+  background-color: #d3d3d3;
+  place-self: center;
+}
+.linje2 {
+  width: 80%;
+  height: 0.1px;
+  background-color: #d3d3d3;
+  place-self: center;
+}
 h2 {
   font-family: "Roboto", serif;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  padding-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+  left: 10%;
+}
+
+.be {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
 }
 a {
   font-family: "Roboto", serif;
@@ -54,22 +79,87 @@ a {
   text-decoration: underline;
   color: black;
 }
+.nike {
+  position: relative;
+  font-size: 5rem;
+  font-family: roboto;
+  left: 9.5%;
+}
+.nike1 {
+  position: relative;
+  font-size: 1rem;
+  font-family: roboto;
+  left: 10.5%;
+}
+
+.load {
+  width: 50%;
+  height: 30px;
+  place-self: center;
+  position: absolute;
+  font-size: 1rem;
+  font-family: roboto;
+  bottom: -65%;
+  margin: 50px;
+  border-radius: 15px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.load:hover {
+  transition: transform 0.3s ease-in-out;
+}
 
 a:hover {
   font-weight: 450;
 }
+.floating-cart {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+  padding: 10px;
+  margin-left: 55px;
+}
+
+.floating-cart:hover {
+  transform: scale(1.1);
+}
+.categorylist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+}
+.categorylist img {
+  opacity: 70%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
 .categorylist a {
   font-family: "Roboto", serif;
-  text-decoration: none;
-  font-weight: lighter;
-  padding: 2rem;
+  text-transform: uppercase;
+  text-decoration: 0.1px gray underline;
+  font-weight: bold;
+  top: 50%;
+  font-size: 1rem;
   border-radius: 10px;
-  border: 1px grey solid;
   background: white;
-  border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 10px rgba(119, 119, 119, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 .categorylist a:hover {
   font-weight: 450;
@@ -88,7 +178,8 @@ a:hover {
 .purchaseBox {
   color: black;
   padding: 50px;
-  border: 1px grey solid;
+  border: 1px rgb(128, 128, 128) solid;
+  border-radius: 10px;
 }
 .info {
   padding: 50px;
@@ -104,22 +195,27 @@ a:hover {
 .product main {
   display: grid;
 }
-.product main,
-.product main img {
+.product,
+.product img {
   grid-column: 1/-1;
+  padding: 40px;
 }
 .purchaseBox form label {
   gap: 1rem;
 }
 .purchaseBox button {
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
   width: 50%;
   place-self: center;
   border-radius: 30px;
   background-color: white;
   border: 1px solid;
   padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 30, 0.471);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .purchaseBox button:hover {
   font-weight: 450;
@@ -128,4 +224,58 @@ a:hover {
 dt {
   font-weight: 700;
   text-decoration: underline;
+  padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+  .categorylist a {
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(119, 119, 119, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    margin: 5px;
+  }
+
+  .product img {
+    flex: 1;
+    max-width: 100%;
+    padding-left: 60px;
+    height: auto;
+  }
+
+  .purchaseBox {
+    flex: 1;
+    place-self: start end;
+    padding: 80px;
+  }
+
+  .purchaseBox,
+  h3 {
+    font-size: 3rem;
+  }
+  .purchaseBox,
+  p {
+    font-size: 1.5rem;
+  }
+  .purchaseBox form label {
+    font-size: 1.5rem;
+  }
+  .purchaseBox button {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    width: 70%;
+    place-self: center;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 30, 0.49);
+  }
 }
