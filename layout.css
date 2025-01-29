@@ -125,9 +125,89 @@ header {
 .smallProduct:hover {
   transform: scale(1.1);
 }
+
+.signup-section {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.signup-section p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-bottom: 10px;
+  font-family: roboto;
+  font-style: italic;
+}
+
+.signup-section input {
+  font-size: 1.5rem;
+  width: 300px;
+  margin-right: 10px;
+  border: none;
+  text-decoration: 1px underline;
+}
+
+.signup-section button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: roboto;
+}
+
+.signup-section button:hover {
+  background-color: #48ff00b7;
+}
+
 @media (min-width: 800px) {
   .forside {
     margin-left: 200px;
     margin-right: 200px;
+  }
+
+  .signup-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    bottom: -40%;
+    left: 10%;
+    position: absolute;
+  }
+
+  .signup-section p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-style: italic;
+  }
+
+  .signup-section input {
+    font-size: 1.5rem;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    text-decoration: 1px underline;
+    padding-top: 20px;
+  }
+
+  .signup-section button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: roboto;
+  }
+
+  .signup-section button:hover {
+    background-color: #48ff00b7;
   }
 }
