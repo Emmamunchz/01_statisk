@@ -21,9 +21,6 @@ body {
   background-color: white;
 }
 
-footer {
-  padding: 300px;
-}
 header {
   display: flex;
   justify-content: center;

@@ -68,6 +68,10 @@ h2 {
   padding: 10px;
   position: relative;
   left: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 9s steps(100) 1s forwards;
 }
 
 h4 {
@@ -88,12 +92,20 @@ a {
   left: 9.5%;
   line-height: 0.75;
   font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 7s steps(100) 1s forwards;
 }
 .nike1 {
   position: relative;
   font-size: 1rem;
   font-family: roboto;
   left: 10.5%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(100) 1s forwards;
 }
 
 select {
@@ -121,6 +133,49 @@ select {
 
 a:hover {
   font-weight: 450;
+}
+/* forside */
+.cykel {
+  position: relative;
+  padding: 55px;
+  padding-bottom: 100px;
+  opacity: 80%;
+}
+
+/* produktliste */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 80%;
+}
+.typewriter {
+  font-family: "roboto", sans-serif;
+  font-size: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) 1s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 .floating-cart {
   background-color: white;
@@ -151,6 +206,9 @@ a:hover {
   object-fit: cover;
   height: 150px;
   width: 100%;
+}
+.categorylist img:hover {
+  opacity: 100%;
 }
 .categorylist a {
   font-family: "Roboto", serif;
@@ -300,5 +358,26 @@ dt {
     color: white;
     font-weight: bold;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .cykel {
+    position: relative;
+    width: 60%;
+    place-self: start end;
+    top: -34%;
+    right: 7%;
+    margin-bottom: -12%;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
   }
 }
