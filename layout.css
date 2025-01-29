@@ -207,4 +207,14 @@ header {
   .signup-section button:hover {
     background-color: #48ff00b7;
   }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Giver luft mellem elementerne */
+    max-width: 1200px; /* Begrænser bredden */
+    margin: auto; /* Centrerer containeren på siden */
+    padding: 20px;
+  }
 }
