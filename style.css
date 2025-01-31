@@ -41,6 +41,29 @@
   color: rgb(0, 255, 0);
 }
 
+/* produkt */
+.sold-out {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: 2px rgb(255, 0, 0) underline;
+}
+
+.in-stock {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: 2px rgb(0, 255, 0) underline;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.produkttitel {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
 .linje {
   width: 80%;
   height: 0.1px;
