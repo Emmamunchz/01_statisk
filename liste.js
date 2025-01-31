@@ -8,10 +8,12 @@ function showList(products) {
   let markup = "";
   products
     .map((product) => {
-      markup += ` <article class="smallProduct">
+      markup += ` 
+      
+      <article class="smallProduct">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}" />
         <h3> ${product.productdisplayname}</h3>
-        <p class="subtle">${product.articletype} - ${product.brandname}</p>
+        <p class="subtle">${product.articletype} - ${product.brandname} - ${product.usagetype}</p>
         <p class="price"><span>Prev.</span>DKK ${product.price},-</p>
         <div class="discounted">
           <p class="price">Now DKK 895,-</p>
