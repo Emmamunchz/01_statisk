@@ -1,4 +1,10 @@
+// CONSTANTS
+// const queryString = window.location.search;
+// const urlParams = new URLSearchParams(queryString);
+// const productId = urlParams.get("productId");
+
 let productId = 1164;
+console.log("productId;", productId);
 let productContainer = document.querySelector(".productContainer");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
