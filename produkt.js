@@ -1,4 +1,4 @@
-let productId = 1163;
+let productId = 1164;
 let productContainer = document.querySelector(".productContainer");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
