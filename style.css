@@ -211,13 +211,13 @@ footer {
 }
 .categorylist {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
   height: 100%;
   width: 100%;
 }
-.categorylist img {
+
+/* .categorylist img {
   opacity: 70%;
   max-width: 100%;
   height: auto;
@@ -227,7 +227,7 @@ footer {
 }
 .categorylist img:hover {
   opacity: 100%;
-}
+} */
 
 .categorylist a {
   font-family: "Roboto", serif;
