@@ -1,8 +1,14 @@
+// CONSTANTS
 const listContainer = document.querySelector("main");
-fetch(`https://kea-alt-del.dk/t7/api/products/`)
+const getUrl = window.location.search;
+const getSearch = new URLSearchParams(getUrl);
+const category = getSearch.get("category");
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${category}`)
   .then((response) => response.json())
   .then((data) => showList(data));
 
+// FUNCTIONS
 function showList(products) {
   console.log(products);
   let markup = "";
