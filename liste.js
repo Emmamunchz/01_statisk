@@ -21,12 +21,13 @@ function showList(products) {
 
         // toFixed(0) betyder at jeg har fjernet decimalerne. så fx 249. så hvis der stod 249,50 så havde det været toFixed(2) osv..
         ` 
+        
       <article class="smallProduct ${product.discount && "onSale"} ${product.soldout && "soldOut"}">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}" />
         <h3> ${product.productdisplayname}</h3>
         <p class="subtle">${product.articletype} - ${product.brandname} - ${product.usagetype}</p>
 
-        
+
         ${product.discount ? `<div class="discounted"><p>${product.discount}% off</p></div>` : ""}
 
 
