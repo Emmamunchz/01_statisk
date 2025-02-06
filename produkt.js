@@ -83,6 +83,26 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
     } else {
       console.error("Element .productContainer blev ikke fundet!");
     }
+
+    // EVENT LISTENER FOR "Add to bag" KNAP
+    document.querySelector(".bag").addEventListener("click", function (event) {
+      event.preventDefault(); // Forhindrer formularen i at blive sendt
+
+      // Gemmer produktdata i localStorage
+      localStorage.setItem(
+        "productInBag",
+        JSON.stringify({
+          id: data.id,
+          name: data.productdisplayname,
+          price: finalPrice,
+          size: document.getElementById("size").value, // Får størrelsen fra dropdown
+          image: `https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp`,
+        })
+      );
+
+      // Sender brugeren til bag.html
+      window.location.href = "bag.html";
+    });
   })
   .catch((error) => {
     console.error("Fetch error:", error);

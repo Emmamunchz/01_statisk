@@ -23,6 +23,125 @@
   font-size: 2rem;
 }
 
+.filter-container {
+  position: relative;
+  left: 60px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.køb:hover .tooltip3 {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown {
+  place-self: center;
+  width: 400px;
+}
+.submit {
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  left: 20%;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  background-color: rgb(0, 255, 0);
+  padding: 10px;
+  position: relative;
+  left: 20%;
+  border-radius: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 28%;
+  background: white;
+  padding: 55px;
+  border: 5px solid #48ff00;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  z-index: 1000;
+  font-family: flayfair display;
+  font-weight: bold;
+}
+
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.tooltip3 {
+  position: absolute;
+  top: 520px;
+  left: 60%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  background-color: rgb(0, 255, 0);
+  color: black;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.køb {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  top: 10;
+  width: 50%;
+  place-self: center;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 30, 0.471);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.løb {
+  font-weight: 450;
+  border: 2px solid;
+}
+
+.product-image {
+  width: 100%; /* Sætter bredden på billedet til 100% af containeren */
+  height: 100%; /* Bevarer billedets proportioner */
+  border-radius: 10px; /* Runder kanterne på billedet */
+  object-fit: cover; /* Sørger for, at billedet fylder containeren uden at forvrænge det */
+}
+
+label:hover {
+  margin-right: 8px;
+  cursor: pointer;
+  color: rgb(0, 255, 0);
+  font-size: 16px;
+}
+
+label {
+  font-family: "playfair display", sans-serif;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.check {
+  font-family: "playfair display", sans-serif;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
 .titel {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
@@ -195,6 +314,15 @@ footer {
     width: 100%;
   }
 }
+.bag-container {
+  position: relative;
+  padding: 100px;
+}
+.basket {
+  font-size: 8rem;
+  color: black;
+  place-self: center;
+}
 .floating-cart {
   background-color: white;
   padding: 10px;
@@ -207,6 +335,22 @@ footer {
 }
 
 .floating-cart:hover {
+  transform: scale(1.1);
+}
+
+.floating-cart-header {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+  right: 20px;
+  top: 20px;
+}
+
+.floating-cart-header:hover {
   transform: scale(1.1);
 }
 .categorylist {
@@ -488,5 +632,142 @@ dt {
   .cykel:hover + .bag .tooltip1 {
     opacity: 1;
     visibility: visible;
+  }
+
+  .filter-container {
+    position: relative;
+    left: 180px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  label:hover {
+    margin-right: 8px;
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+    font-size: 16px;
+  }
+
+  label {
+    font-family: "playfair display", sans-serif;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .check {
+    font-family: "playfair display", sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .bag-container {
+    position: relative;
+    padding: 10px;
+    left: 100px;
+  }
+  .basket {
+    font-size: 3rem;
+    color: black;
+    place-self: center;
+  }
+  .top {
+    position: relative;
+    left: 10px;
+  }
+  .product-in-bag {
+    position: relative;
+    left: 75px;
+    top: 0px;
+  }
+  .product-image {
+    width: 15%; /* Sætter bredden på billedet til 100% af containeren */
+    height: 100%; /* Bevarer billedets proportioner */
+    border-radius: 10px; /* Runder kanterne på billedet */
+    object-fit: cover; /* Sørger for, at billedet fylder containeren uden at forvrænge det */
+  }
+  .køb {
+    position: absolute;
+    z-index: 1000;
+    left: 450px;
+    place-self: start;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+    top: 10;
+    width: 15%;
+    place-self: center;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 30, 0.471);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .køb:hover .tooltip3 {
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown {
+    place-self: center;
+    width: 400px;
+  }
+  .submit {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 20%;
+    border-radius: 10px;
+  }
+
+  .submit:hover {
+    background-color: rgb(0, 255, 0);
+    padding: 10px;
+    position: relative;
+    left: 20%;
+    border-radius: 10px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 26.5%;
+    top: 380px;
+    background: white;
+    padding: 55px;
+    border: 5px solid #48ff00;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 1000;
+    font-family: flayfair display;
+    font-weight: bold;
+  }
+
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
+  .tooltip3 {
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    transform: translateX(-50%);
+    padding: 6px 10px;
+    background-color: rgb(0, 255, 0);
+    color: black;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 }

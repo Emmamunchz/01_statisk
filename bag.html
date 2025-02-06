@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CATEGORIES</title>
+    <title>BASKET</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
+    <script src="bag.js" defer></script>
+
     <!-- font -->
     <!-- h1 og h2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,10 +27,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io-3/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io-3/favicon-16x16.png" />
     <link rel="manifest" href="favicon_io-3/site.webmanifest" />
-
-    <script src="forside.js" defer></script>
   </head>
-
   <body>
     <header>
       <a href="index.html" class="titel"> FASHION<span>R</span>US</a>
@@ -36,41 +35,58 @@
         <button class="floating-cart-header">🛒</button>
       </a>
     </header>
-    <div class="linje"></div>
+    <main class="side">
+      <section class="top">
+        <div class="linje"></div>
 
-    <h2>SHOP</h2>
-    <div class="linje2"></div>
-    <div class="plads">
-      <div class="text">
-        <h2 class="nike">CATE- <br />GORIES</h2>
+        <h2>YOUR FAVORITES</h2>
+        <div class="linje2"></div>
+
+        <h2 class="nike">BASKET</h2>
+        <h2 class="basket">🛒</h2>
+
         <p class="nike1">
-          Discover our range of sportswear that blends style,<br />
-          comfort, and functionality. <br />
-          Whether you're training or relaxing, <br />we’ve got something for you. <br />
-          Browse now <br />
-          and find the perfect match for your active lifestyle!
+          Buy the items that you added to your bag! <br />
+          Before someone else does...
         </p>
-      </div>
-      <div class="container">
-        <img class="cykel" src="cykel.webp" alt="cykler" />
-        <div class="bag">
-          <span class="tooltip1">SCROLL TO START SHOPPING!</span>
-        </div>
-      </div>
-    </div>
-    <div class="linje"></div>
+        <div class="dropdown">
+          <button class="køb">
+            Buy
+            <span class="tooltip3">THANKS FOR SHOPPING AT FASHIONRUS!</span>
+          </button>
+          <div class="dropdown-content">
+            <form class="checkout-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
 
-    <h2>CHOOSE A CATEGORY FOR YOU</h2>
-    <div class="linje2"></div>
-    <main class="forside">
-      <section class="categorylist">
-        <!-- <a class="list" href="produktliste.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="Deck Navy Blue Backpack" /><br />Accessories </a> -->
-        <!-- <a class="list" href="produktliste.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp" alt="Blue T20 Indian Cricket Jersey" /><br />Apparel</a> -->
-        <!-- <a class="list" href="produktliste.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp" alt="Mean Team India Cricket Jersey" /><br />Footwear</a> -->
-        <!-- <a class="list" href="produktliste.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1575.webp" alt="Mean Team India Cricket Jersey" /><br />Free Items</a> -->
-        <!-- <a class="list" href="produktliste.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1583.webp" alt="Mean Team India Cricket Jersey" /><br />Personal Care</a> -->
-        <!-- <a class="list" href="produktliste.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="Mean Team India Cricket Jersey" /><br />Sporting Goods</a> -->
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+
+              <label for="address">Address:</label>
+              <input type="text" id="address" required />
+
+              <label for="card">Card Number:</label>
+              <input type="text" id="card" required />
+
+              <button class="submit">Get it home</button>
+            </form>
+          </div>
+        </div>
       </section>
+
+      <section class="buy">
+        <div class="bag-container">
+          <!-- Her vil produktet blive vist -->
+        </div>
+      </section>
+
+      <div class="signup-section">
+        <p>SIGN UP & DONT MISS OUT</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="ENTER YOURE EMAIL" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
